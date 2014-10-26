@@ -6,7 +6,7 @@ date: Oct, 25th, 2014
 Ever wonder if your car's MPG you are currently driving is above or below average?
 Are you evaluating a new car and would like to find out if it is delivering a good MPG?
 
-Wonder no more. The Car Mileage Predictor is based on a predictive model conducted using public records of 32 cars of diverse makes and models. The Predictive Model and analysis are available for scrutiny at: 
+Wonder no more. The Car Mileage Predictor is based on a predictive model conducted using public records of 32 cars of diverse makes and models. 
 
 Executive Summary 
 ========================================================
@@ -18,6 +18,8 @@ The Car Mileage Predictor is a calculator of Miles Per Gallon (MPG) of a hypothe
 - Second enter the number of seconds for the car to reach quarter of a mile
 
 - Last check if the transmission is manual or leave unchecked for automatic
+
+The Predictive Model and analysis are available for scrutiny at: https://fhasbani.shinyapps.io/MPG-Predictor-Data-Product
 
 A Sample of the Source Data
 ========================================================
