@@ -18,7 +18,7 @@ shinyUI(pageWithSidebar(
       br(),
       p("For an introduction to the Car Mileage Predictor, visit the ",
         a("Pitch Presentation", 
-          href = "https://fhasbani.shinyapps.io/MPG-Predictor-Data-Product")),
+          href = "https://github.com/FHasbani/DataProductPitch")),
       br()
    ),
    mainPanel(
