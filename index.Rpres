@@ -1,0 +1,49 @@
+Car Mileage Predictor
+========================================================
+author: Frank Hasbani PMP, CSM
+date: Oct, 25th, 2014
+
+Ever wonder if your car's MPG you are currently driving is above or below average?
+Are you evaluating a new car and would like to find out if it is delivering a good MPG?
+
+Wonder no more. The Car Mileage Predictor is based on a predictive model conducted using public records of 32 cars of diverse makes and models. The Predictive Model and analysis are available for scrutiny at: 
+
+Executive Summary 
+========================================================
+
+The Car Mileage Predictor is a calculator of Miles Per Gallon (MPG) of a hypothetical car based on the Weight(wt), Quarter Of A Mile in Seconds(qsec) and if the Transmission is Automatic or Manual.
+
+- First enter the weight of your car in lbs.
+
+- Second enter the number of seconds for the car to reach quarter of a mile
+
+- Last check if the transmission is manual or leave unchecked for automatic
+
+A Sample of the Source Data
+========================================================
+The Predictor Model Coefficients are:
+```{r, echo=FALSE}
+
+model <- lm(mpg ~ wt + am + qsec, data = mtcars)
+summary(model)$coefficients
+```   
+The multiple R squared is `r summary(model)$r.squared`, adjusted R Squared is `r summary(model)$adj.r.squared` and F-STatistic is `r summary(model)$fstatistic`
+
+
+Exploratory Data Analysis
+========================================================
+
+```{r, echo=FALSE}
+plot(mtcars)
+```
+
+
+How to use this Predictor 
+========================================================
+- Predictor Tab is reactive to the 3 predictor variables in the SideBar Panel on the left side. 
+- How to Use It: Explains how to effectively use and understand this tool 
+- Raw Data Tab: Shows the source data used to build the prediction model in a Table format
+- Structure Tab: Shows the structure of the same data
+- Summary Tab: Shows the summary of both the Model and the Data, and explains the effectivness of the model.
+- Box Plot Tab: Shows a Box Plot of the Variances of the MPG based of the number of cylinders
+- Correlation Plot Tab: Shows the Correlation between all the Column Variables
